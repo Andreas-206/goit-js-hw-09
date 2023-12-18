@@ -10,10 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const gallery = document.querySelector(".gallery");
   images.forEach(image => {
     const galleryItem = document.createElement("li");
-    galleryItem.innerHTML = `<a class="galleri-link" href="${image.large}">
+    galleryItem.classList.add("gallery-item");
+    galleryItem.innerHTML = `<a class="gallery-link" href="${image.large}">
       <img class="gallery-image" src="${image.small}" alt="${image.alt}"></a>`;
     gallery.appendChild(galleryItem);
   });
 
-  new SimpleLightbox("gallery a");
+  new SimpleLightbox(".gallery a");
 });
