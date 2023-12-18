@@ -29,6 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log({ email, message });
       localStorage.removeItem(storageKey);
       form.reset();
-    }
+    };
   });
 });
