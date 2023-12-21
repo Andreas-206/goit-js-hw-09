@@ -1,3 +1,15 @@
+body {
+  font-family: Montserrat;
+  color: #2e2f42;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .gallery {
   max-width: 1440px;
   padding: 24px;
