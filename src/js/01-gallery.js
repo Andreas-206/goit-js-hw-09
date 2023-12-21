@@ -1,6 +1,8 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const images = [
     { small: "small-image1.jpg", large: "large-image1.jpg", alt: "Image 1" },
