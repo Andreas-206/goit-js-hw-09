@@ -3,10 +3,10 @@ const storageKey = 'feedback-form-state';
 
 const loadForm = () => JSON.parse(localStorage.getItem(storageKey)) || {};
 const saveForm = () => {
-  const formData = {
-    email: form.email.value.trim(),
-    message: form.message.value.trim(),
-  };
+const formData = {
+  email: form.email.value.trim(),
+  message: form.message.value.trim(),
+};
   localStorage.setItem(storageKey, JSON.stringify(formData));
 };
 
