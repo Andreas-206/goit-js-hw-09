@@ -71,13 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const gallery = document.querySelector(".gallery");
-  images.forEach(image => {
-    const galleryItem = document.createElement("li");
-    galleryItem.classList.add("gallery-item");
-    galleryItem.innerHTML = `<a class="gallery-link" href="${image.original}">
-      <img class="gallery-image" src="${image.preview}" alt="${image.description}"></a>`;
-    gallery.appendChild(galleryItem);
-  });
+    images.forEach(image => {
+      const galleryItem = `<li class="gallery-item">
+        <a class="gallery-link" href="${image.original}">
+          <img class="gallery-image" src="${image.preview}" alt="${image.description}">
+        </a>
+      </li>`;
+
+    gallery.insertAdjacentHTML('beforeend', galleryItem);
+});
 
   new SimpleLightbox(".gallery a");
 });
