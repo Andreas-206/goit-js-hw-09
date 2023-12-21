@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const gallery = document.querySelector(".gallery");
     images.forEach(image => {
       const galleryItem = `<li class="gallery-item">
-        <a class="gallery-link" href="${image.original}">
+        <a href="${image.original}">
           <img class="gallery-image" src="${image.preview}" alt="${image.description}">
         </a>
       </li>`;
