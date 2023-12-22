@@ -81,9 +81,6 @@ images.forEach(image => {
 });
 
 new SimpleLightbox('.gallery a', {
-  captions: true,
-  captionSelector: 'img',
   captionsData: 'alt',
-  captionPosition: 'bottom',
   captionDelay: 250,
 });
